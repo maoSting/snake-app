@@ -1,0 +1,34 @@
+{
+    "name": "dingq/snake-app",
+    "description": "snake 应用",
+    "type": "project",
+    "keywords": [
+        "swoole",
+        "snake"
+    ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "dingq",
+            "email": "237661791@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "dingq/snake": "dev-dev"
+    },
+    "require-dev": {
+        "eaglewu/swoole-ide-helper": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
