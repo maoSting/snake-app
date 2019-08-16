@@ -12,5 +12,18 @@ return [
         'server_type' => \Snake\Swoole\Server::SWOOLE_SERVER,
         'port' => 9051,
         'action' => \app\server\AppHttpServer::class,
-    ]
+        'mode' => SWOOLE_PROCESS,
+        'socket_type' => SWOOLE_SOCK_TCP,
+        'ip'=> '127.0.0.1',
+        'set' => [
+            'work_num' => 5
+        ]
+    ],
+//    'add_listener' => [
+//        'port' => 9052,
+//        'action' => \app\server\AppHttpPort::class,
+//        'type' => SWOOLE_SOCK_TCP,
+//        'ip' => '127.0.0.1',
+//        'set'
+//    ]
 ];
