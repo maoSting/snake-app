@@ -20,7 +20,5 @@ require APP_PATH.'/config/config.php';
 
 //require APP_PATH
 
-
-
-\Snake\Snake::setConfig(import());
+\Snake\Snake::setConfig(import(APP_PATH.'/config/server.php'));
 \Snake\Snake::run();

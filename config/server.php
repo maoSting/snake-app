@@ -9,9 +9,9 @@
 
 return [
     'server' => [
-        'server_type' => \Snake\Swoole\Server::SWOOLE_SERVER,
+        'server_type' => \Snake\Snake::SWOOLE_HTTP_SERVER,
         'port' => 9051,
-        'action' => \app\server\AppHttpServer::class,
+        'event' => \app\server\AppHttpServer::class,
         'mode' => SWOOLE_PROCESS,
         'socket_type' => SWOOLE_SOCK_TCP,
         'ip'=> '127.0.0.1',

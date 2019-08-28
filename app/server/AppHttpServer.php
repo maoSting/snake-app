@@ -13,6 +13,9 @@ class AppHttpServer extends \Snake\Swoole\Server\HttpServer {
         parent::__construct($server, $conf);
     }
 
+    public function onReceive(\Swoole\Server $server, int $fd, int $reactor_id, string $data){
+
+    }
 
     public function onRequest(\Swoole\Http\Request $request, \Swoole\Http\Response $response){
         $this->httpRouter($request, $response);
