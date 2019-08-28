@@ -16,7 +16,8 @@ return [
         'socket_type' => SWOOLE_SOCK_TCP,
         'ip'=> '127.0.0.1',
         'set' => [
-            'work_num' => 5
+            'worker_num' => 4,
+            'daemonize' => 1
         ]
     ],
 //    'add_listener' => [
